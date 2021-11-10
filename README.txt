@@ -1,4 +1,4 @@
-# The-K0N.github.io
+The-K0N.github.io
 
 Thanks for downloading this template!
 
