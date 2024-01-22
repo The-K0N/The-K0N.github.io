@@ -24,3 +24,27 @@ function topFunction() {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
+
+// Efek Animasi
+document.addEventListener("DOMContentLoaded", function () {
+  var animatedSections = document.querySelectorAll(".content-section");
+
+  var observer = new IntersectionObserver(function (entries, observer) {
+    entries.forEach(function (entry) {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("animate");
+        observer.unobserve(entry.target);
+
+        // Mengulang animasi setelah selesai
+        setTimeout(function () {
+          entry.target.classList.remove("animate");
+          observer.observe(entry.target);
+        }, 1000); // Sesuaikan dengan durasi animasi (dalam milidetik)
+      }
+    });
+  }, { threshold: 0.5 });
+
+  animatedSections.forEach(function (section) {
+    observer.observe(section);
+  });
+});
