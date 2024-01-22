@@ -170,6 +170,7 @@ section {
   justify-content: center;
   gap: 5rem;
   height: 80vh;
+  z-index: 1;
 }
 
 .section__pic-container {
