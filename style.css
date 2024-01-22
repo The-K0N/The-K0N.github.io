@@ -466,3 +466,14 @@ footer p {
   background-color: #e7ecef;
   /* Add a dark-grey background on hover */
 }
+
+/* Animasi Section */
+.content-section {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.5s, transform 0.5s;
+}
+.content-section.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
