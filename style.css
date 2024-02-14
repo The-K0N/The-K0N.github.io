@@ -402,7 +402,7 @@ article .icon {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  height: 70vh;
+  height: 50vh;
 }
 
 #contact > h1 {
@@ -443,7 +443,7 @@ article .icon {
 /* FOOTER SECTION */
 
 footer {
-  height: 26vh;
+  height: 20vh;
   margin: 0 1rem;
 }
 
