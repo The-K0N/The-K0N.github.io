@@ -405,6 +405,10 @@ article .icon {
   height: 70vh;
 }
 
+#contact > h1 {
+  padding-bottom: 2rem;
+}
+
 .contact-info-upper-container {
   display: flex;
   justify-content: center;
